@@ -30,19 +30,27 @@
       </nav>
     </header>
     <main>
-      <form action="">
+      <form name="form1">
         <h2>Result Checker</h2>
         <label for="">Name:</label>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" /> <br />
+        <input type="text" name="firstName" placeholder="First name" required />
+        <input type="text" name="lastName" placeholder="Last name" required />
+        <br />
         <br />
 
         <label for="email">Email:</label>
-        <input type="email" placeholder="gmc123@gmc.edu.ng" /> <br />
+        <input
+          type="email"
+          name="email"
+          placeholder="gmc123@gmc.edu.ng"
+          required
+        />
+        <br />
         <br />
 
         <label for="">Registration Number:</label>
-        <input type="name" placeholder="gmc202305F2" /> <br />
+        <input type="name" name="regNo" placeholder="gmc202305F2" required />
+        <br />
         <br />
 
         <label for="">Examination Year:</label>
@@ -64,17 +72,84 @@
         <br />
 
         <label for="">Enter your Score:</label>
-        <input type="text" id="score" required />
-        <input type="submit" id="submit" />
+        <br />
+        <div class="general">
+          <div class="subject">
+            <label for="" class="subject-label">English</label>
+            <input
+              type="text"
+              name="score1"
+              class="score1 score-input"
+              required
+            />
+            <!-- <input type="text" name="grade1" class="score1 grade-input"> -->
+            <br />
+
+            <label for="" class="subject-label">Maths</label>
+            <input
+              type="text"
+              name="score2"
+              class="score2 score-input"
+              required
+            />
+            <!-- <input type="text" name="grade2" class="score2 grade-input"> -->
+            <br />
+
+            <label for="" class="subject-label">Chemistry</label>
+            <input
+              type="text"
+              name="score3"
+              class="score3 score-input"
+              required
+            />
+            <!-- <input type="text" name="grade3" class="score3 grade-input">  -->
+            <br />
+
+            <label for="" class="subject-label">Biology</label>
+            <input
+              type="text"
+              name="score4"
+              class="score4 score-input"
+              required
+            />
+            <!-- <input type="text" name="grade4" class="score4 grade-input">  -->
+            <br />
+
+            <label for="" class="subject-label">French</label>
+            <input
+              type="text"
+              name="score5"
+              class="score5 score-input"
+              required
+            />
+            <!-- <input type="text" name="grade5" class="score5 grade-input">  -->
+            <br />
+          </div>
+        </div>
+
+        <div>
+          <!-- <input type="text" id="score" class="sco"  /> -->
+          <input
+            type="button"
+            value="Get Result"
+            class="sub"
+            onclick="Calculate()"
+          />
+        </div>
         <!-- <button id="grade">View your Grade</button> -->
       </form>
+
+      <!-- <p>Total:<input type="text" class="total"> <p> <br>
+      <p>Average:<input type="text" class="total"> </p> <br>
+      <p>Remark:<input type="text" class="total"></p> -->
     </main>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Olaniyi Fernandez</a
-      >. Coded by <a href="#">Emmanuel Ozoemena</a>.
-    </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Olaniyi Fernandez</a
+        >. Coded by <a href="#">Emmanuel Ozoemena</a>.
+      </div>
   </body>
   <script src="./script.js"></script>
 </html>
