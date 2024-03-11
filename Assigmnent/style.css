@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.2);
+}
+
+.logo img {
+  width: 100px;
+  margin-left: 30px;
+}
+/* 
+nav {
+  display: flex;
+} */
+
+nav a {
+  text-decoration: none;
+  margin-right: 35px;
+  color: red;
+  font-size: 25px;
+  margin-top: 30px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+nav button {
+  border: none;
+  border-radius: 5px;
+  margin-top: 27px;
+  background-color: red;
+  color: white;
+  padding: 12px 32px;
+  font-size: 17px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: gray;
+}
+
+main {
+  padding: 20px 50px;
+  margin: 50px auto;
+  border: 1px gray;
+  width: 600px;
+  height: 440px;
+  font-size: 25px;
+  box-shadow: 0 0 20px 0px rgb(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 5px;
+  margin-left: 10px;
+  width: 10rem;
+}
+
+#months {
+  margin-left: 30px;
+}
+
+#score {
+  width: 3rem;
+
+}
+
+form #submit {
+  border: none;
+  border-radius: 5px;
+  margin-left: 27px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 17px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+form #submit:hover {
+  opacity: 0.6;
+}
+
+form #submit:active {
+  background-color: gray;
+}
+
+.attribution {
+   font-size: 11px;
+  text-align: center; 
+  margin-bottom: 10px;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%); 
+}
